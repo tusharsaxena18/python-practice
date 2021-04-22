@@ -15,7 +15,7 @@ listi=[
 
 #executing a query
 #DATATYPE : TEXT;INTEGER;BLOB;NULL;REAL
-c.execute("SELECT * FROM contacts")
+c.execute("SELECT * FROM contacts WHERE name = 'Mummy'")
 
 #fetching the data
 #print(c.fetchone())
