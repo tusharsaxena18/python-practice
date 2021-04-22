@@ -1,3 +1,11 @@
+import sqlite3
+
+#establishing a connection to the database
+conn= sqlite3.connect()
+
+#making a cursor connection to the database
+c=conn.cursor()
+
 class contact:
     def __init__(self,name,number):
         self.name = name
@@ -20,3 +28,9 @@ elif value in [2]:
 
 else:
     print("Invaild Option")
+
+#commiting the query
+conn.commit()
+
+#closing the connection to the database
+conn.close()
