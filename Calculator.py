@@ -30,7 +30,3 @@ elif z in ['div','divide','Div','Divide']:
 
 elif z in ['multiply','Multiply','multi','Multi','mul']:
     print(multi(n,y))
-
-import tkinter as tk
-root=tk.Tk()
-root.mainloop()
