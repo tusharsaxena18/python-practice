@@ -1,6 +1,0 @@
->jupyter lab --ip xx.xx.xx.xx --port xxxx
->jupyter lab --ip 0.0.0.0 --port 8888
->jupyter notebook --ip xx.xx.xx.xx --port xxxx
-
->jupyter notebook password
->jupyter lab password
