@@ -11,9 +11,10 @@ root.geometry('250x250')
 root.title("Msg box")
 
 def popup():
-    messagebox.showinfo("Hello World","Hello")
+   messagebox.showinfo("Hello","Hello World!!")
 
-Button(root , text = "Popup" , command = popup).pack()
+#creating a new tkinter button
+a = Button(root,text = "heya",command = popup).pack()
 
 # Looping the Tkinter instance
 root.mainloop()
