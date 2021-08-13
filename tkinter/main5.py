@@ -75,7 +75,7 @@ def button_equal():
     box.delete(0,END)
 
     if math == "Addition":
-         box.insert(0,first_num + int(second_num))
+         box.insert(1,first_num + int(second_num))
     
     elif math == "Subtract":
         box.insert(0,first_num - int(second_num))
@@ -87,27 +87,101 @@ def button_equal():
         box.insert(0,first_num / int(second_num))
 
     elif math == "mod":
-        box.insert(0,first_num % int(second_num))
+        box.insert(1,first_num % int(second_num))
         
 #Creating new Tkinter buttons
-button_1 = Button(root , text = "1" , padx = 40 ,pady =20 , command=lambda: button_number(1))
-button_2 = Button(root , text = "2" , padx = 40 ,pady =20 , command=lambda: button_number(2))
-button_3 = Button(root , text = "3" , padx = 40 ,pady =20 , command=lambda: button_number(3))
-button_4 = Button(root , text = "4" , padx = 40 ,pady =20 , command=lambda: button_number(4))
-button_5 = Button(root , text = "5" , padx = 40 ,pady =20 , command=lambda: button_number(5))   
-button_6 = Button(root , text = "6" , padx = 40 ,pady =20 , command=lambda: button_number(6))
-button_7 = Button(root , text = "7" , padx = 40 ,pady =20 , command=lambda: button_number(7))
-button_8 = Button(root , text = "8" , padx = 40 ,pady =20 , command=lambda: button_number(8))
-button_9 = Button(root , text = "9" , padx = 40 ,pady =20 , command=lambda: button_number(9))
-button_0 = Button(root , text = "0" , padx = 40 ,pady =20 , command=lambda: button_number(0))
-button_e = Button(root , text = "=" , padx = 40 ,pady =20 , command=button_equal)
-button_a = Button(root , text = "+" , padx = 39 ,pady =20 , command= button_add)
-button_s = Button(root , text = "-" , padx = 40 ,pady =20 , command=button_subtract)
-button_m = Button(root , text = "x" , padx = 40 ,pady =20 , command=button_multiply)
-button_d = Button(root , text = "/" , padx = 40 ,pady =20 , command=button_divide)
-button_c = Button(root , text = "Clear" , padx = 30 ,pady =20 , command=button_clear)
-button_exit = Button(root , text = "Exit" , padx = 33 ,pady =20 , command=root.quit)
-button_mod = Button(root , text = "%" , padx = 40 ,pady =20 , command=button_mod)
+button_1 = Button(root , text = "1" , 
+    padx = 40 ,
+    pady =20 , 
+    command=lambda: button_number(1))
+
+button_2 = Button(root , text = "2" , 
+    padx = 40 ,
+    pady =20 , 
+    command=lambda: button_number(2))
+
+button_3 = Button(root , text = "3" , 
+    padx = 40 ,
+    pady =20 , 
+    command=lambda: button_number(3))
+
+button_4 = Button(root , text = "4" , 
+    padx = 40 ,
+    pady =20 , 
+    command=lambda: button_number(4))
+
+button_5 = Button(root , text = "5" , 
+    padx = 40 ,
+    pady =20 , 
+    command=lambda: button_number(5))   
+
+button_6 = Button(root , text = "6" , 
+    padx = 40 ,
+    pady =20 , 
+    command=lambda: button_number(6))
+
+button_7 = Button(root , text = "7" , 
+    padx = 40 ,
+    pady =20 , 
+    command=lambda: button_number(7))
+
+button_8 = Button(root , text = "8" , 
+    padx = 40 ,
+    pady =20 , 
+    command=lambda: button_number(8))
+
+button_9 = Button(root , text = "9" , 
+    padx = 40 ,
+    pady =20 , 
+    command=lambda: button_number(9))
+
+button_0 = Button(root , text = "0" , 
+    padx = 40 ,
+    pady =20 , 
+    command=lambda: button_number(0))
+
+button_e = Button(root , text = "=" , 
+    padx = 40 ,
+    pady =20 , 
+    command=button_equal)
+
+button_a = Button(root , text = "+" , 
+    padx = 39 ,
+    pady =20 , 
+    command= button_add)
+
+button_s = Button(root , text = "-" , 
+    padx = 40 ,
+    pady =20 , 
+    command=button_subtract)
+
+button_m = Button(root , text = "x" , 
+    padx = 40 ,
+    pady =20 , 
+    command=button_multiply)
+
+button_d = Button(root , text = "/" , 
+    padx = 40 ,
+    pady =20 , 
+    command=button_divide)
+
+button_c = Button(root , 
+    text = "Clear" , 
+    padx = 30 ,
+    pady =20 , 
+    command=button_clear)
+
+button_exit = Button(root , 
+    text = "Exit" , 
+    padx = 33 ,
+    pady =20 , 
+    command=root.quit)
+
+button_mod = Button(root , 
+    text = "%" , 
+    padx = 40 ,
+    pady =20 , 
+    command=button_mod)
 
 
 # Placing the buttons on the gui
