@@ -14,8 +14,6 @@ def blue_counter_update():
     f_num= int(blue_label_number.cget("text"))
     print (f_num)
     
-    
-
 def red_label_color():
     red_label.config(bg="red")
 
