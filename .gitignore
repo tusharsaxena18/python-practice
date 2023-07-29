@@ -4,3 +4,6 @@
 __pycache__/
 output/
 here_is_env/
+node\ js/node_modules/
+node\ js/package.json
+node\ js/package-lock.json
