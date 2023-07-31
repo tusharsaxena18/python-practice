@@ -1,5 +1,11 @@
 const prompt = require("prompt-sync")();
 
-for (let i = 0; i < 12 ; i++) {
-    return         
+let sum = 0 
+let n = prompt("Enter a number: ");
+n = parseFloat(n);
+
+for (let i = 1; i <= n ; i++) {
+    sum += i;         
 }
+
+console.log(sum);

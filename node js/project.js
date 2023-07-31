@@ -57,7 +57,7 @@ function getBet(balance, lines) {
 }
 
 function spin() {
-    return 1
+    return
 }
 
 let balance = deposit();
