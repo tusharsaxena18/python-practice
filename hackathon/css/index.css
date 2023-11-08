@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+body {
+    background-color:#4540a9bc;
+}
+
+.icon{
+    padding: 0px 10px 0px;
+}
+
+h1{
+    font-size: 32px;
+    font-family: Open Sans;
+    position: relative;
+    margin-bottom: 40px;
+    color: white;   
+}
+
+.login-box h1::after{
+    content: '';
+    width: 30px;
+    height: 4px;
+    border-radius: 3px;
+    background: #4540a9bc;
+    position: absolute;
+    bottom: -12px;
+    left : 50%;
+    transform: translateX(-50%);
+}
+
+.input-field {
+    background: #eaeaea;
+    margin: 20px 0px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+input{
+    width:100%;
+    background: transparent;
+    border: 0px;
+    outline: 0px;
+    padding: 18px 15px;
+}
+
+.login-box {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    width: 90%;
+    max-width: 265px;
+    transform: translate(-50%,-50%);
+    background: #98acd9;
+    padding: 50px 60px 70px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.fa-solid {
+    margin-left: 15px;
+    color: #999;
+}

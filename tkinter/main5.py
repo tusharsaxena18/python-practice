@@ -8,13 +8,13 @@ root = Tk()
 root.title("Calculator")
 
 #Adding images to the program
-root.iconbitmap('D:/Documents/ico/calc.ico')
+# root.iconbitmap('D:/Documents/ico/calc.ico')
 
 #Creating a input Tkinter instance
 box = Entry(root , width = 35 , borderwidth = 5)
 box.grid(row = 0 , column = 0 , columnspan =3 ,padx = 10 , pady = 10)
 
-# Declaring the functions for the number buttons
+# Declaring the function for the number buttons
 def button_number(number):
     previous = box.get()
     box.delete(0,END)
